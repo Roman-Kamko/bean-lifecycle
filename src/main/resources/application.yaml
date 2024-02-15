@@ -1,0 +1,8 @@
+logging:
+  level:
+    root: error
+
+lifecycle:
+  print:
+    enabled: false
+    original: false
