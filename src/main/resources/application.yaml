@@ -2,4 +2,7 @@ logging:
   level:
     root: error
 
-lifecycle.print.enabled: false
+lifecycle:
+  print:
+    enabled: false
+    original: false

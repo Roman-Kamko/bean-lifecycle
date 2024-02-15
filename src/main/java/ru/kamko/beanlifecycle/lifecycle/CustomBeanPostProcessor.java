@@ -29,7 +29,6 @@ public class CustomBeanPostProcessor implements BeanPostProcessor {
             Field field = aClass.getDeclaredField(PROPERTY);
             field.setAccessible(true);
             field.set(bean, "another greeting");
-            System.out.println(field.get(bean));
         } catch (Exception e) {
             throw new InvalidPropertyException(Phone.class, PROPERTY,
                     "Bean class does not have expected property", e);
